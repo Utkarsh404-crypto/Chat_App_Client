@@ -266,10 +266,10 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
 					<Text
 						color={"#0096FF"}
 						fontWeight={"extrabold"}
-						fontSize="3xl"
+						fontSize="2xl"
 						pb={3}
 						fontFamily="Work sans">
-						Start Chatting{" "}
+						CHAT{" "}
 					</Text>{" "}
 				</Box>
 			)}{" "}
