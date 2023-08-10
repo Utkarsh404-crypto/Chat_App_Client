@@ -24,7 +24,7 @@ import io from "socket.io-client";
 import Lottie from "react-lottie";
 import animationData from "../Animations/TypingAnimation.json";
 
-const ENDPOINT = "https://confabmern.herokuapp.com"; //changes
+const ENDPOINT = "https://chatserver-0lp9.onrender.com"; //changes
 var socket, selectedChatCompare;
 
 const SingleChat = ({ fetchAgain, setFetchAgain }) => {
@@ -65,7 +65,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
 			};
 			setLoad(true);
 			const { data } = await axios.get(
-				`https://confabmern.herokuapp.com/api/message/${slectedchat._id}`,
+				`https://chatserver-0lp9.onrender.com/api/message/${slectedchat._id}`,
 				config
 			);
 			setMessages(data);
@@ -125,7 +125,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
 				};
 				setNewMessage("");
 				const { data } = await axios.post(
-					"https://confabmern.herokuapp.com/api/message",
+					"https://chatserver-0lp9.onrender.com/api/message",
 					{ content: newMessage, chatId: slectedchat._id },
 					config
 				);

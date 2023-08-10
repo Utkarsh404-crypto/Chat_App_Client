@@ -52,7 +52,7 @@ const GroupChatModel = ({ children }) => {
 			};
 
 			const { data } = await axios.get(
-				`https://confabmern.herokuapp.com/api/user?search=${search}`,
+				`https://chatserver-0lp9.onrender.com/api/user?search=${search}`,
 				config
 			);
 			setLoad(false);
@@ -87,7 +87,7 @@ const GroupChatModel = ({ children }) => {
 			};
 
 			const { data } = await axios.post(
-				`https://confabmern.herokuapp.com/api/chats/group`,
+				`https://chatserver-0lp9.onrender.com/api/chats/group`,
 				{
 					name: groupChatName,
 					users: JSON.stringify(selectedUsers.map((u) => u._id))

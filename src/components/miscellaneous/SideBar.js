@@ -79,7 +79,7 @@ const SideBar = () => {
 			};
 
 			const { data } = await axios.get(
-				`https://confabmern.herokuapp.com/api/user?search=${search}`,
+				`https://chatserver-0lp9.onrender.com/api/user?search=${search}`,
 				config
 			);
 
@@ -107,7 +107,7 @@ const SideBar = () => {
 				}
 			};
 			const { data } = await axios.post(
-				`https://confabmern.herokuapp.com/api/chats`,
+				`https://chatserver-0lp9.onrender.com/api/chats`,
 				{ userId },
 				config
 			);

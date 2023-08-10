@@ -55,7 +55,7 @@ const UpdateGroupChatModal = ({ fecthAgain, setFetchAgain, fetchMessages }) => {
 				}
 			};
 			const { data } = await axios.put(
-				`https://confabmern.herokuapp.com/api/chats/groupremove`,
+				`https://chatserver-0lp9.onrender.com/api/chats/groupremove`,
 				{
 					chatId: slectedchat._id,
 					userId: user1._id
@@ -92,7 +92,7 @@ const UpdateGroupChatModal = ({ fecthAgain, setFetchAgain, fetchMessages }) => {
 				}
 			};
 			const { data } = await axios.put(
-				"https://confabmern.herokuapp.com/api/chats/rename",
+				"https://chatserver-0lp9.onrender.com/api/chats/rename",
 				{ chatId: slectedchat._id, chatName: groupChatName },
 				config
 			);
@@ -129,7 +129,7 @@ const UpdateGroupChatModal = ({ fecthAgain, setFetchAgain, fetchMessages }) => {
 			};
 
 			const { data } = await axios.get(
-				`https://confabmern.herokuapp.com/api/user?search=${search}`,
+				`https://chatserver-0lp9.onrender.com/api/user?search=${search}`,
 				config
 			);
 			setLoad(false);
@@ -177,7 +177,7 @@ const UpdateGroupChatModal = ({ fecthAgain, setFetchAgain, fetchMessages }) => {
 				}
 			};
 			const { data } = await axios.put(
-				`https://confabmern.herokuapp.com/api/chats/groupadd`,
+				`https://chatserver-0lp9.onrender.com/api/chats/groupadd`,
 				{
 					chatId: slectedchat._id,
 					userId: user1._id

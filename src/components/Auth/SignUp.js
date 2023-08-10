@@ -104,7 +104,7 @@ const SignUp = () => {
 				}
 			};
 			const { data } = await axios.post(
-				"https://confabmern.herokuapp.com/api/user",
+				"https://chatserver-0lp9.onrender.com/api/user",
 				{ name, email, password, profile_pic },
 				config
 			);
